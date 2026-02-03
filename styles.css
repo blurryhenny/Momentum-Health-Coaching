@@ -228,6 +228,38 @@ main {
   padding: 20px 6vw 80px;
 }
 
+.thanks {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 40px 6vw;
+}
+
+.thanks-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 40px;
+  max-width: 520px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  display: grid;
+  gap: 18px;
+  justify-items: center;
+}
+
+.thanks-card p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.thanks-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .section-head {
   max-width: 680px;
   margin-bottom: 32px;

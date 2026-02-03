@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Momentum Health &amp; Coaching — New Client Intake</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient"></div>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">
+          <span class="logo-badge" aria-hidden="true">
+            <img
+              class="logo-img"
+              src="logo.png"
+              alt=""
+            />
+          </span>
+          <span class="logo-text">Momentum Health &amp; Coaching</span>
+        </div>
+        <div class="nav-actions">
+          <button class="ghost">Programs</button>
+          <button class="ghost">FAQ</button>
+          <button class="primary">Book Consult</button>
+        </div>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="tag">Personal Training • Strength • Performance</p>
+          <h1>Build a training plan that actually fits your life.</h1>
+          <p class="lead">
+            Tell us where you're starting, what you want to feel, and the gear you
+            have. We turn your answers into a tailored plan with clear weekly
+            targets and habits you can keep.
+          </p>
+          <div class="hero-cta">
+            <button class="primary" id="jump-form">Start intake</button>
+            <button class="ghost">See sample plan</button>
+          </div>
+          <div class="trust">
+            <div>
+              <strong>250+</strong>
+              <span>clients trained</span>
+            </div>
+            <div>
+              <strong>4.9</strong>
+              <span>average rating</span>
+            </div>
+            <div>
+              <strong>6</strong>
+              <span>week momentum system</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>What you get</h2>
+          <ul>
+            <li>Weekly plan built around your schedule.</li>
+            <li>Exercise swaps for home, gym, or travel.</li>
+            <li>Clear progress checkpoints and habit cues.</li>
+          </ul>
+          <div class="mini">
+            <div>
+              <h3>Next step</h3>
+              <p>Submit the intake. We reply within 24 hours.</p>
+            </div>
+            <div class="pill">Free consult</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intake" id="intake">
+        <div class="section-head">
+          <h2>New client intake</h2>
+          <p>
+            The more detail you share, the better we can personalize your plan.
+            This form takes about 6 minutes.
+          </p>
+        </div>
+
+        <form class="intake-form" name="client-intake">
+          <div class="grid two">
+            <label>
+              Full name
+              <input type="text" name="fullName" placeholder="Jordan Lee" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@email.com" required />
+            </label>
+          </div>
+
+          <div class="grid two">
+            <label>
+              Preferred pronouns
+              <input type="text" name="pronouns" placeholder="she/her, he/him, they/them" />
+            </label>
+            <label>
+              Time zone
+              <input type="text" name="timezone" placeholder="PST, EST, GMT" />
+            </label>
+          </div>
+
+          <div class="grid three">
+            <label>
+              Age
+              <input type="number" name="age" min="13" max="90" placeholder="29" />
+            </label>
+            <label>
+              Height
+              <input type="text" name="height" placeholder="5'8\" or 173 cm" />
+            </label>
+            <label>
+              Current weight
+              <input type="text" name="weight" placeholder="165 lb or 75 kg" />
+            </label>
+          </div>
+
+          <label>
+            Primary goals
+            <div class="chips">
+              <label><input type="checkbox" name="goals" value="strength" /> Build strength</label>
+              <label><input type="checkbox" name="goals" value="fat-loss" /> Fat loss</label>
+              <label><input type="checkbox" name="goals" value="muscle" /> Muscle gain</label>
+              <label><input type="checkbox" name="goals" value="performance" /> Sports performance</label>
+              <label><input type="checkbox" name="goals" value="mobility" /> Mobility & movement</label>
+              <label><input type="checkbox" name="goals" value="energy" /> Energy & consistency</label>
+            </div>
+          </label>
+
+          <label>
+            Training experience
+            <select name="experience" required>
+              <option value="">Select one</option>
+              <option>Brand new</option>
+              <option>Some experience</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+          </label>
+
+          <label>
+            Available training space
+            <div class="chips">
+              <label><input type="checkbox" name="space" value="home" /> Home</label>
+              <label><input type="checkbox" name="space" value="gym" /> Full gym</label>
+              <label><input type="checkbox" name="space" value="outdoor" /> Outdoor</label>
+              <label><input type="checkbox" name="space" value="travel" /> Travel / hotel</label>
+            </div>
+          </label>
+
+          <label>
+            Equipment available
+            <div class="chips">
+              <label><input type="checkbox" name="equipment" value="dumbbells" /> Dumbbells</label>
+              <label><input type="checkbox" name="equipment" value="barbell" /> Barbell & plates</label>
+              <label><input type="checkbox" name="equipment" value="kettlebells" /> Kettlebells</label>
+              <label><input type="checkbox" name="equipment" value="bands" /> Resistance bands</label>
+              <label><input type="checkbox" name="equipment" value="rack" /> Squat rack</label>
+              <label><input type="checkbox" name="equipment" value="machines" /> Machines</label>
+              <label><input type="checkbox" name="equipment" value="bodyweight" /> Bodyweight only</label>
+            </div>
+          </label>
+
+          <label>
+            Weekly availability
+            <div class="grid three">
+              <label>
+                Days per week
+                <select name="days">
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                </select>
+              </label>
+              <label>
+                Session length
+                <select name="sessionLength">
+                  <option>30 min</option>
+                  <option>45 min</option>
+                  <option>60 min</option>
+                  <option>75 min</option>
+                </select>
+              </label>
+              <label>
+                Preferred days
+                <input type="text" name="preferredDays" placeholder="Mon, Wed, Fri" />
+              </label>
+            </div>
+          </label>
+
+          <label>
+            Current activity level (outside training)
+            <select name="activity">
+              <option>Sedentary / desk heavy</option>
+              <option>Lightly active</option>
+              <option>Moderately active</option>
+              <option>Highly active</option>
+            </select>
+          </label>
+
+          <label>
+            Injuries, pain, or movement limitations
+            <textarea name="injuries" rows="4" placeholder="Tell us what hurts or needs extra care"></textarea>
+          </label>
+
+          <label>
+            Nutrition preferences or restrictions
+            <textarea name="nutrition" rows="3" placeholder="Allergies, macros, calorie goals"></textarea>
+          </label>
+
+          <label>
+            Motivation & accountability style
+            <div class="chips">
+              <label><input type="checkbox" name="motivation" value="structure" /> Clear structure</label>
+              <label><input type="checkbox" name="motivation" value="coaching" /> Lots of coaching</label>
+              <label><input type="checkbox" name="motivation" value="check-ins" /> Weekly check-ins</label>
+              <label><input type="checkbox" name="motivation" value="flexibility" /> Flexible plan</label>
+            </div>
+          </label>
+
+          <label>
+            Anything else we should know?
+            <textarea name="notes" rows="4" placeholder="Goals, schedule changes, or anything important"></textarea>
+          </label>
+
+          <div class="form-footer">
+            <div>
+              <p class="fine">By submitting, you agree to be contacted about your plan.</p>
+            </div>
+            <button class="primary" type="submit">Submit intake</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="cta">
+        <div>
+          <h2>Ready to train with purpose?</h2>
+          <p>
+            We match your plan to your lifestyle, then coach you with clarity and
+            empathy.
+          </p>
+        </div>
+        <button class="primary">Book your consult</button>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h3>Momentum Health &amp; Coaching</h3>
+        <p>Personal training for people with real schedules.</p>
+      </div>
+      <div>
+        <p>Email</p>
+        <strong>hello@momentumhealthcoaching.com</strong>
+      </div>
+      <div>
+        <p>Location</p>
+        <strong>Remote • Worldwide</strong>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

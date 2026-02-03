@@ -18,18 +18,13 @@
       <nav class="nav">
         <div class="logo">
           <span class="logo-badge" aria-hidden="true">
-            <img
-              class="logo-img"
-              src="logo.png"
-              alt=""
-            />
+            <img class="logo-img" src="logo.png" alt="" />
           </span>
           <span class="logo-text">Momentum Health &amp; Coaching</span>
         </div>
         <div class="nav-actions">
-          <button class="ghost">Programs</button>
-          <button class="ghost">FAQ</button>
-          <button class="primary">Book Consult</button>
+          <a class="btn ghost" href="#intake">Start intake</a>
+          <a class="btn primary" href="#intake">Book consult</a>
         </div>
       </nav>
       <div class="hero-grid">
@@ -42,8 +37,8 @@
             targets and habits you can keep.
           </p>
           <div class="hero-cta">
-            <button class="primary" id="jump-form">Start intake</button>
-            <button class="ghost">See sample plan</button>
+            <a class="btn primary" href="#intake" id="jump-form">Start intake</a>
+            <a class="btn ghost" href="#intake">Book consult</a>
           </div>
           <div class="trust">
             <div>
@@ -88,7 +83,15 @@
           </p>
         </div>
 
-        <form class="intake-form" name="client-intake">
+        <form
+          class="intake-form"
+          name="client-intake"
+          action="https://formsubmit.co/momentumhealthandcoaching@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New Momentum Health intake" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_replyto" value="" />
           <div class="grid two">
             <label>
               Full name
@@ -253,7 +256,7 @@
             empathy.
           </p>
         </div>
-        <button class="primary">Book your consult</button>
+        <a class="btn primary" href="#intake">Book your consult</a>
       </section>
     </main>
 
@@ -264,7 +267,7 @@
       </div>
       <div>
         <p>Email</p>
-        <strong>hello@momentumhealthcoaching.com</strong>
+        <strong>momentumhealthandcoaching@gmail.com</strong>
       </div>
       <div>
         <p>Location</p>

@@ -97,6 +97,7 @@ h3 {
   gap: 12px;
 }
 
+a.btn,
 button {
   border: none;
   border-radius: 999px;
@@ -104,20 +105,27 @@ button {
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
+a.btn.primary,
 button.primary {
   background: var(--accent);
   color: #fff;
   box-shadow: 0 12px 24px rgba(47, 111, 237, 0.28);
 }
 
+a.btn.ghost,
 button.ghost {
   background: transparent;
   border: 1px solid rgba(16, 19, 21, 0.2);
   color: var(--ink);
 }
 
+a.btn:hover,
 button:hover {
   transform: translateY(-2px);
 }
@@ -328,6 +336,7 @@ textarea:focus {
   margin-top: 10px;
 }
 
+.cta .btn,
 .cta button {
   background: #fff;
   color: var(--ink);
